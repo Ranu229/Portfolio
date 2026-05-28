@@ -97,9 +97,9 @@
       </p>
       <div class="hero__cta reveal">
         <a href="#projects" class="btn btn--primary">View My Work</a>
-        <a href="./Ranu Shrivastava resume (2).pdf" target="_blank" class="btn btn--cv" id="cvBtn">
-          <span class="cv-icon">⬇</span> Download CV
-        </a>
+        <button class="btn btn--cv" id="cvBtn">
+          <span class="cv-icon">📄</span> View / Download CV
+        </button>
         <a href="#contact" class="btn btn--outline">Get In Touch</a>
       </div>
     </div>
@@ -285,7 +285,48 @@
       <h2 class="section__heading reveal">Featured <em>Work</em></h2>
       <div class="projects__grid">
 
-        <div class="project-card reveal">
+        <!-- Project: Safe Companion -->
+        <div class="project-card project-card--safe-companion reveal">
+          <div class="project-card__banner project-card__banner--safe-companion">
+            <img src="./safecompanion_preview.png" alt="Safe Companion Dashboard Preview" class="project-card__img">
+            <div class="radar-pulse"></div>
+            <div class="radar-pulse radar-pulse--2"></div>
+            <svg class="shield-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="project-card__top">
+            <span class="project-tag">React · Agentic AI · GenAI</span>
+            <span class="project-date">May 2026</span>
+          </div>
+          <h3 class="project-card__title">Safe Companion</h3>
+          <p class="project-card__desc">
+            An AI-powered women's safety smart guardian that utilizes Generative AI, Agentic AI, and motion anomaly detection to provide proactive safety. Built for women, solo commuters, and corporate night-shift workers, it transitions personal security from reactive manual SOS buttons to autonomous, context-aware protection and automated emergency actions.
+          </p>
+          <div class="project-card__tech">
+            <span>React.js</span><span>Generative AI</span><span>Agentic AI</span>
+            <span>Motion Anomaly</span><span>Web APIs</span><span>TailwindCSS</span>
+          </div>
+          <div class="project-card__footer">
+            <span class="project-highlight">🛡️ Proactive Safety Smart Guardian</span>
+            <div class="project-card__links">
+              <a href="https://github.com/Ranu229" target="_blank" rel="noopener noreferrer" class="project-link project-link--github">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                GitHub
+              </a>
+              <a href="https://safe-companion-omega.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link project-link--live">
+                <span class="pulse-dot"></span>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project: Indic Roots -->
+        <div class="project-card project-card--indic-roots reveal">
+          <div class="project-card__banner project-card__banner--indic-roots">
+            <img src="./indicroots_preview.png" alt="Indic Roots VR App Preview" class="project-card__img">
+            <div class="vr-grid"></div>
+            <div class="vr-headset">🕶️</div>
+          </div>
           <div class="project-card__top">
             <span class="project-tag">MERN · AI · VR</span>
             <span class="project-date">Dec 2025</span>
@@ -301,20 +342,25 @@
           <div class="project-card__footer">
             <span class="project-highlight">🏆 SIH 2025 Grand Finalist Project</span>
             <div class="project-card__links">
-              <a href="https://github.com/Ranu229/indic-roots" target="_blank" rel="noopener noreferrer" class="project-link project-link--github">
+              <a href="https://github.com/Ranu229" target="_blank" rel="noopener noreferrer" class="project-link project-link--github">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
                 GitHub
               </a>
-              <!-- Replace # with your live demo URL when available -->
-              <a href="http://indicroots-7c53.vercel.app" class="project-link project-link--live">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <a href="http://indicroots-7c53.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link project-link--live">
+                <span class="pulse-dot"></span>
                 Live Demo
               </a>
             </div>
           </div>
         </div>
 
-        <div class="project-card reveal">
+        <!-- Project: Personal Portfolio -->
+        <div class="project-card project-card--portfolio reveal">
+          <div class="project-card__banner project-card__banner--portfolio">
+            <img src="./portfolio_preview.png" alt="Personal Portfolio Preview" class="project-card__img">
+            <div class="code-particles"></div>
+            <div class="monogram">RS.</div>
+          </div>
           <div class="project-card__top">
             <span class="project-tag">HTML · CSS · JS</span>
             <span class="project-date">Jul 2025</span>
@@ -334,7 +380,7 @@
                 GitHub
               </a>
               <a href="https://ranu229.github.io/Portfolio" target="_blank" rel="noopener noreferrer" class="project-link project-link--live">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span class="pulse-dot"></span>
                 Live Demo
               </a>
             </div>
@@ -704,11 +750,158 @@
           <a href="https://www.linkedin.com/in/ranu-784187328" target="_blank">LinkedIn</a>
           <a href="https://github.com/Ranu229" target="_blank">GitHub</a>
           <a href="mailto:ranushrii6@gmail.com">Email</a>
-          <a href="./cv/ranu_cv.pdf" target="_blank">CV</a>
+          <button class="footer-cv-btn" id="footerCvBtn">CV</button>
         </div>
       </div>
     </div>
   </footer>
+
+  <!-- ─── Interactive Resume Modal ─── -->
+  <div class="resume-modal" id="resumeModal">
+    <div class="resume-modal__overlay"></div>
+    <div class="resume-modal__content">
+      <button class="resume-modal__close" id="resumeClose" aria-label="Close modal">✕</button>
+      
+      <div class="resume-modal__header">
+        <div class="resume-modal__title-section">
+          <h2 class="resume-modal__name">Ranu Shrivastava</h2>
+          <p class="resume-modal__title">Full-Stack Developer &amp; CSE Student</p>
+        </div>
+        <a href="./Ranu Shrivastava resume (2).pdf" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--cv-download">
+          <span class="cv-icon">⬇</span> Download PDF CV
+        </a>
+      </div>
+
+      <div class="resume-modal__body">
+        <div class="resume-tabs">
+          <button class="resume-tab active" data-tab="experience">💼 Experience</button>
+          <button class="resume-tab" data-tab="education">🎓 Education</button>
+          <button class="resume-tab" data-tab="skills">🛠️ Skills</button>
+          <button class="resume-tab" data-tab="achievements">🏆 Recognition &amp; Leadership</button>
+        </div>
+
+        <div class="resume-panels">
+          
+          <!-- Experience Tab -->
+          <div class="resume-panel active" id="panel-experience">
+            <div class="resume-timeline">
+              <div class="resume-timeline__item">
+                <div class="resume-timeline__dot"></div>
+                <div class="resume-timeline__header">
+                  <h4 class="resume-timeline__role">Web Development Intern</h4>
+                  <span class="resume-timeline__period">Jun 2024 – Jul 2024</span>
+                </div>
+                <div class="resume-timeline__org">IBT — Institute of Banking &amp; Technology</div>
+                <ul class="resume-timeline__list">
+                  <li>Gained hands-on experience in HTML, CSS, and JavaScript through structured practical training.</li>
+                  <li>Developed and styled fully responsive web pages, improving user experience and modern design principles.</li>
+                  <li>Learned fundamentals of backend database operations and basic server-side communication APIs.</li>
+                </ul>
+              </div>
+
+              <div class="resume-timeline__item">
+                <div class="resume-timeline__dot"></div>
+                <div class="resume-timeline__header">
+                  <h4 class="resume-timeline__role">Internal Audit Job Simulation</h4>
+                  <span class="resume-timeline__period">May 2026</span>
+                </div>
+                <div class="resume-timeline__org">Goldman Sachs × Forage</div>
+                <ul class="resume-timeline__list">
+                  <li>Completed a high-fidelity internal audit simulation focusing on risk evaluation and security control assessments.</li>
+                  <li>Analyzed technical process vulnerabilities, data governance policies, and synthesized risk reports.</li>
+                  <li>Strengthened foundational knowledge in enterprise auditing methodologies, compliance standards, and risk mitigation.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education Tab -->
+          <div class="resume-panel" id="panel-education">
+            <div class="resume-timeline">
+              <div class="resume-timeline__item">
+                <div class="resume-timeline__dot"></div>
+                <div class="resume-timeline__header">
+                  <h4 class="resume-timeline__role">B.Tech in Computer Science Engineering</h4>
+                  <span class="resume-timeline__period">2023 – 2027</span>
+                </div>
+                <div class="resume-timeline__org">Lakshmi Narain College of Technology (LNCT), Bhopal</div>
+                <p class="resume-timeline__text">Focusing on Full-Stack Development, Data Structures, Algorithms, and Emerging Tech (AI &amp; VR).</p>
+              </div>
+
+              <div class="resume-timeline__item">
+                <div class="resume-timeline__dot"></div>
+                <div class="resume-timeline__header">
+                  <h4 class="resume-timeline__role">Higher Secondary School Certificate (Class XII)</h4>
+                  <span class="resume-timeline__period">2021 – 2022</span>
+                </div>
+                <div class="resume-timeline__org">Subhash Excellent School, Bhopal</div>
+                <p class="resume-timeline__text">Specialized in Physics, Chemistry, and Mathematics (PCM).</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills Tab -->
+          <div class="resume-panel" id="panel-skills">
+            <div class="resume-skills__grid">
+              <div class="resume-skills__category">
+                <h5>Frontend Development</h5>
+                <div class="resume-skills__tags">
+                  <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React.js</span><span>Next.js</span><span>TailwindCSS</span>
+                </div>
+              </div>
+              <div class="resume-skills__category">
+                <h5>Backend &amp; Databases</h5>
+                <div class="resume-skills__tags">
+                  <span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>RESTful APIs</span>
+                </div>
+              </div>
+              <div class="resume-skills__category">
+                <h5>Emerging Tech &amp; Tools</h5>
+                <div class="resume-skills__tags">
+                  <span>Generative AI</span><span>Agentic AI</span><span>Virtual Reality (VR)</span><span>Git / GitHub</span><span>Figma</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Achievements & Leadership Tab -->
+          <div class="resume-panel" id="panel-achievements">
+            <div class="resume-achievements">
+              <div class="resume-ach__item">
+                <div class="resume-ach__badge">🏆</div>
+                <div class="resume-ach__info">
+                  <strong>Smart India Hackathon (SIH) 2025 Grand Finalist</strong>
+                  <p>Developed Indic Roots, a MERN stack heritage platform integrating VR/360° views and Google Gemini AI.</p>
+                </div>
+              </div>
+              <div class="resume-ach__item">
+                <div class="resume-ach__badge">🚀</div>
+                <div class="resume-ach__info">
+                  <strong>MOE IDE Bootcamp Edition 3, IIT Roorkee 2026</strong>
+                  <p>Presented cutting-edge MERN &amp; VR solutions at a prestigious, national-level innovation incubator.</p>
+                </div>
+              </div>
+              <div class="resume-ach__item">
+                <div class="resume-ach__badge">👑</div>
+                <div class="resume-ach__info">
+                  <strong>Event Management Secretary</strong>
+                  <p>Organized, managed, and executed 20+ college events and hackathons end-to-end.</p>
+                </div>
+              </div>
+              <div class="resume-ach__item">
+                <div class="resume-ach__badge">🎶</div>
+                <div class="resume-ach__info">
+                  <strong>RGPV State Level Classical Singing Winner</strong>
+                  <p>Recognized for cultural excellence as the top classical singer in the state university system.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

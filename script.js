@@ -455,3 +455,81 @@
   window.closeLightbox = closeLightbox;
 
 })();
+
+/* ─── 14. Interactive Resume Modal ─── */
+(function initResumeModal() {
+  const modal       = document.getElementById('resumeModal');
+  const heroBtn     = document.getElementById('cvBtn');
+  const footerBtn   = document.getElementById('footerCvBtn');
+  const closeBtn    = document.getElementById('resumeClose');
+  const overlay     = modal ? modal.querySelector('.resume-modal__overlay') : null;
+  const tabs        = document.querySelectorAll('.resume-tab');
+  const panels      = document.querySelectorAll('.resume-panel');
+
+  if (!modal) return;
+
+  /* ── Open ── */
+  function openModal() {
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    document.addEventListener('keydown', onKey);
+  }
+
+  /* ── Close ── */
+  function closeModal() {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+    document.removeEventListener('keydown', onKey);
+  }
+
+  /* ── Keyboard Shortcut ── */
+  function onKey(e) {
+    if (e.key === 'Escape') closeModal();
+  }
+
+  /* ── Event Listeners ── */
+  if (heroBtn)   heroBtn.addEventListener('click', openModal);
+  if (footerBtn) footerBtn.addEventListener('click', openModal);
+  if (closeBtn)  closeBtn.addEventListener('click', closeModal);
+  if (overlay)   overlay.addEventListener('click', closeModal);
+
+  /* ── Tab Switching ── */
+  tabs.forEach(tab => {
+    tab.addEventListener('click', function () {
+      const targetTab = this.getAttribute('data-tab');
+
+      // Update active tab class
+      tabs.forEach(t => t.classList.remove('active'));
+      this.classList.add('active');
+
+      // Update active panel class
+      panels.forEach(panel => {
+        panel.classList.remove('active');
+        if (panel.id === `panel-${targetTab}`) {
+          panel.classList.add('active');
+        }
+      });
+    });
+  });
+
+  // Scale cursor on hover inside modal
+  const interactives = modal.querySelectorAll('button, a');
+  const cursor = document.getElementById('cursor');
+  const follower = document.getElementById('cursorFollower');
+
+  if (cursor && follower) {
+    interactives.forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursor.style.transform   = 'translate(-50%, -50%) scale(2.5)';
+        follower.style.transform = 'translate(-50%, -50%) scale(1.5)';
+        follower.style.borderColor = 'rgba(201, 168, 76, 0.6)';
+      });
+      el.addEventListener('mouseleave', () => {
+        cursor.style.transform   = 'translate(-50%, -50%) scale(1)';
+        follower.style.transform = 'translate(-50%, -50%) scale(1)';
+        follower.style.borderColor = '';
+      });
+    });
+  }
+})();
+
